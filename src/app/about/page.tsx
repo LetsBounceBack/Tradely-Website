@@ -46,13 +46,13 @@ export default function about() {
           </motion.div>
         </div>
 
-        <div className='grid lg:grid-cols-[30%_70%] gap-4 px-6 md:px-8 lg:px-12 bg-dark pb-10'>
+        <div className='grid lg:grid-cols-[30%_70%] gap-4 px-6 md:px-8 lg:px-12 bg-dark pb-10 space-y-2 md:space-y-0'>
           {/* TRANSPARENCY */}
           <motion.div
             variants={fadeIn('up', 0.2)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
             exit={{ opacity: 0 }}
             className='bg-blue-400 row-span-2 min-h-96 w-full shadow-md relative overflow-hidden'
           >
@@ -93,7 +93,7 @@ export default function about() {
             variants={fadeIn('up', 0.2)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
             exit={{ opacity: 0 }}
             className='bg-[#A2D9CE] min-h-96 shadow-md flex items-center justify-center relative overflow-hidden'
           >
@@ -125,7 +125,7 @@ export default function about() {
             variants={fadeIn('up', 0.2)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.3 }}
             exit={{ opacity: 0 }}
             className='bg-[#DAA598] min-h-96 shadow-md flex items-center justify-center relative overflow-hidden'
           >

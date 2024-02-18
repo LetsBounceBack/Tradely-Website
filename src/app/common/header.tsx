@@ -90,6 +90,7 @@ const Header = () => {
             size={25}
             easing='ease-in'
             duration={0.15}
+            toggled={isOpen}
           />
         </div>
 
