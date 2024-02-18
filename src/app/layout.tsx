@@ -10,7 +10,7 @@ import Footer from './common/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Tradely',
+  title: 'Tradely | Transparency. Trades. Together.',
   description:
     'Transparency. Trades. Together. Social media platform designed for retail by retail.',
 };
