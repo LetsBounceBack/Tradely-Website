@@ -11,7 +11,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Tradely',
-  description: 'Website of Tradely Social',
+  description:
+    'Transparency. Trades. Together. Social media platform designed for retail by retail.',
 };
 
 export default function RootLayout({
