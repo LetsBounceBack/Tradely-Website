@@ -4,30 +4,56 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 205, 242, 175;
+  --background-end-rgb: 239, 242, 175;
+  --background-gradient: linear-gradient(
+    to right,
+    rgb(205, 242, 175),
+    rgb(239, 242, 175)
+  );
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background-gradient);
+}
+
+.gradient-color {
+  background: var(--background-gradient);
+}
+
+.hover-effect {
+  transition: transform 200ms ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+}
+
+.hover-effect-enlarge {
+  transition: transform 300ms ease-in-out;
+}
+
+.hover-effect-enlarge:hover {
+  transform: scale(1.1);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
 }
